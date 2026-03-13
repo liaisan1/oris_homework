@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: oris_spring
+  datasource:
+    url: jdbc:postgresql://localhost:5432/oris_spring
+    username: postgres
+    password: Fadc766e!
+    driverClassName: org.postgresql.Driver
+    hikari:
+      pool-name: OrisHikariPool
+      minimum-idle: 5
+      maximum-pool-size: 20
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      connection-test-query: SELECT 1
+      leak-detection-threshold: 60000
+      auto-commit: true
+
+logging:
+  level:
+    com.zaxxer.hikari: DEBUG

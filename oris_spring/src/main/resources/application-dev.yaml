@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  #  profiles:
+  #    active: dev
+  application:
+    name: oris_spring
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/oris_spring_dev'
+    username: postgres
+    password: Fadc766e!
+    driverClassName: org.postgresql.Driver
